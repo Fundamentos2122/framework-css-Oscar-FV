@@ -6,3 +6,16 @@
 
 html, body{ margin: 0; }
 
+:root{
+
+    --color-primary: #030fb9;
+    --color-primary-darked: #181f81;
+    --color-secondary: #8f91c5;
+    --color-succes: #18b903;
+    --color-info: #39667a;
+    --color-warning: #cf1515;
+    --color-danger: #f5ab0a;
+    --color-light: #7aa5d6;
+    --color-dark: #000000;
+
+}

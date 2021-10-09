@@ -1,0 +1,70 @@
+.btn{
+
+    display:inline-block;
+    text-align: center;
+    padding: 0.25em 0.75em;
+    font-size: 1em;
+    border: 1px solid ;
+    border-radius: 0.25em;
+    text-decoration: none;
+    transition: color 0.2s ease, background-color 0.2s ease;
+
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.btn-primary{
+    background-color: var(--color-primary);
+    color: white
+}
+
+.btn-primary:hover{
+    background-color: var(--color-primary-darked);
+    color: white
+}
+
+.btn-secondary{
+    background-color: var(--color-secondary);
+}
+
+.btn-succes{
+    background-color: var(--color-succes);
+}
+
+.btn-info{
+    background-color: var(--color-info);
+}
+
+.btn-warning{
+    background-color: var(--color-warning);
+}
+
+.btn-danger{
+    background-color: var(--color-danger);
+}
+
+.btn-light{
+    background-color: var(--color-light);
+}
+
+.btn-dark{
+    background-color: var(--color-dark);
+}
+
+.table{
+
+    width: 100%;
+    margin-bottom: 1em;
+    border-collapse: collapse;
+
+}
+
+.table td, .table th{
+
+    padding: 0.5em;
+    text-align: center;
+    border-top: 1px solid 
+
+}

@@ -10,6 +10,44 @@ h1,h2,h3,h4,h5,h6 {
     margin-bottom: calc(var(--font-size) * 0.09);
 }
 
+.display-1{
+    font-size: 6em;
+    font-weight: 300;
+    line-height: 1em;
+}
+
 p{
     margin-top: 0;
+}
+
+.text-primary{
+    color: var(--color-primary);
+}
+
+.text-secondary{
+    color: var(--color-secondary);
+}
+
+.text-succes{
+    color: var(--color-succes);
+}
+
+.text-info{
+    color: var(--color-info);
+}
+
+.text-warning{
+    color: var(--color-warning);
+}
+
+.text-danger{
+    color: var(--color-danger);
+}
+
+.text-light{
+    color: var(--color-light);
+}
+
+.text-dark{
+    color: var(--color-dark);
 }
