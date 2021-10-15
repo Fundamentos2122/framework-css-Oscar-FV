@@ -17,5 +17,5 @@ html, body{ margin: 0; }
     --color-danger: #f5ab0a;
     --color-light: #7aa5d6;
     --color-dark: #000000;
-
+    --container-padding: 1em;
 }
