@@ -18,7 +18,7 @@
     background-color: var(--color-primary);
 }
 
-.primary-btn-pr:hover{
+.btn-primary:hover{
     color: #fff;
     background-color: var(--color-primary-darker);
 }
@@ -33,12 +33,12 @@
     background-color: var(--color-secondary-darker);
 }
 
-.btn-succes{
+.btn-success{
     color: #fff;
     background-color: var(--color-success);
 }
 
-.btn-succes:hover{
+.btn-success:hover{
     color: #fff;
     background-color: var(--color-success-darker);
 }
