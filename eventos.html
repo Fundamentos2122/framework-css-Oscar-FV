@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+
+    <style>
+        .color-red{
+            color: red;  
+        }
+    </style>
+</head>
+<body>
+    <button id="btn1" onclick="document.getElementById('btn1').remove()">Eliminar 1</button>
+
+    <button id="btn2">Eliminar 2</button>
+
+    <p id="p1" style="display: block;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sed optio beatae tempora totam magnam, expedita deserunt eaque. Dicta velit fugiat libero iure ut. Culpa quae voluptatibus magnam eius! Voluptatibus.</p>
+
+    <button id="hide">Ocultar/Mostrar</button>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            var btn2 = document.getElementById("btn2");
+
+            btn2.addEventListener('click', function(){
+                document.getElementById('btn2').remove();
+            });
+
+            var hide = document.getElementById('hide').
+            addEventListener('click', function(){
+                var p1 = document.getElementById("p1");
+                var display = p1.style.display;
+
+                if(display == "block")
+                    p1.style.display = "none";
+                else
+                    p1.style.display = "block";
+            });
+
+            var p1 = document.getElementById("p1");
+            p1.addEventListener('mouseover', function(){
+                this.className = "color-red";
+            });
+
+            p1.addEventListener('mouseout', function(){
+                this.className = "";
+            });
+        });
+    </script>
+</body>
+</html>

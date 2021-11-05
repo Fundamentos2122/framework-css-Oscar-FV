@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+</head>
+<body>
+    <form id="login" name="login">
+        <label for="username">Nombre de Usuario:</label>
+        <input type="text" name="username" autocomplete="off">
+        <br>
+        <label for="password">Contraseña:</label>
+        <input type="password" name="password" autoComplete="off">
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <button onClick="clearLocalStorage()">Limpiar LocalStorage</button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var login = document.forms["login"];
+
+            login.addEventListener('submit', function(e){
+                e.preventDefault();
+
+                var data = {
+                    username: this["username"].value,
+                    password: this["password"].value,
+                }
+
+                //console.log(data);
+
+                var json = JSON.stringify(data);
+                localStorage.setItem('login', json);
+                //console.log(json);
+
+            });
+
+            loadform();
+            
+            function loadform() {
+                var json = localStorage.login;
+                console.log(json);
+
+                if(json == undefined || json == "") {
+                    return;
+                }
+
+                var data = JSON.parse(json);
+
+                document.forms["login"]["username"].value = data.username;
+                document.forms["login"]["password"].value = data.password;
+            }
+        });
+
+        function clearLocalStorage(){
+            localStorage.removeItem('login');
+            window.location.reload();
+        }
+    </script>
+</body>
+</html>

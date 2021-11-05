@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PruebaDom</title>
+</head>
+<body>
+    <h1 id="title">Hello World!</h1>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci consequuntur quae error animi blanditiis. Itaque nulla veniam iusto iure, explicabo doloribus perferendis dicta ipsam in omnis recusandae esse tempora! Magni!</p>
+
+    <div id="h2"></div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci consequuntur quae error animi blanditiis. Itaque nulla veniam iusto iure, explicabo doloribus perferendis dicta ipsam in omnis recusandae esse tempora! Magni!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci consequuntur quae error animi blanditiis. Itaque nulla veniam iusto iure, explicabo doloribus perferendis dicta ipsam in omnis recusandae esse tempora! Magni!</p>
+    
+    <script>
+        var title = document.getElementById("title");
+
+        title.innerText = "New Title";
+        
+        var p = document.getElementsByTagName("p");
+        
+        //var h2 = document.createElement("h2");
+        //var text = document.createTextNode("Segundo encabezado");
+        //h2.appendChild(text);
+        //document.body.insertBefore(h2, p[1]);
+
+        var d_h2 = document.getElementById("h2");
+        d_h2.innerHTML = "<h2>Segundo encabezado</h2>";
+
+    </script>
+</body>
+</html>
