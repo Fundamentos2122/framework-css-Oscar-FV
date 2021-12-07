@@ -97,6 +97,8 @@
     border-collapse: collapse;
     width: 100%;
     margin-bottom: 1em;
+    text-align: center;
+    
 }
 
 .table th, td{
@@ -226,14 +228,22 @@
 .navbar{
     display: flex;
     justify-content: space-between;
-    background-color: var(--color-light);
+    background-color: var(--light-color);
+}
+
+.navbar-collapse{
+    display: none;
+}
+
+.navbar-toggle{
+    display: flex;
 }
 
 .navbar-brand{
     display: inline-block;
     padding: 1em;
     text-decoration: none;
-    color: var(--color-dark);
+    color: var(--dark-color);
     font-weight: 600;
     font-size: 1.25em;
 }
@@ -252,13 +262,14 @@
     display: block;
     padding: 0.5em 0.75em;
     text-decoration: none;
-    color: var(--color-dark);
+    color: var(--dark-color);
 }
 
 .nav-link:hover{
-    background-color: var(--color-light-darker);
-    /* color: var(--color-light); */
+    background-color: var(--light-color-darker);
+    /* color: var(--light-color); */
 }
+
 
 .dropdown-menu{
     position: absolute;
@@ -282,6 +293,78 @@
     background-color: var(--color-light);
 }
 
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+.img-user{
+    border-radius: 50px;
+}
+
+.session{
+    padding-top: 2em;
+    align-items: center;
+}
+
+.session-register{
+    padding-top: 10em;
+    align-items: center;
+}
+
+.session-row{
+    padding-top: 2em;
+    justify-content: center;
+}
+
+.session-form{
+    padding-top: 3em;
+    text-decoration: none;
+}
+
+.input-margin{
+    margin-top: 1em;
+}
+
+.content{
+    margin-top: 15em;
+    justify-content: center;
+}
+
+.content-info{
+    margin-top: 5em;
+    justify-content: flex-end;
+}
+
+.content-info-center{
+    margin-top: 5em;
+    text-align: center;
+    justify-content:center;
+}
+
+.content-info-next{
+    margin-top: 0em;
+}
+
+.header-center{
+    text-align: center;
+}
+
 .show{
     display: block;
+    margin-right: auto;
+}
+
+@media (min-width: 960px){
+    .navbar-toggle{
+        display: none;
+    }
+    .navbar-nav{
+        display: flex;
+    }
+
+    .navbar-collapse{
+        display: flex;
+    }
+
 }
