@@ -87,7 +87,6 @@ function ToggleDropdown(e) {
  * @param {PointerEvent} e 
  */
 function ToggleMenu(e) {
-    e.preventDefault();
 
     let menu = e.target.parentNode.querySelector(`.${menu_collapse_class}`);
 
